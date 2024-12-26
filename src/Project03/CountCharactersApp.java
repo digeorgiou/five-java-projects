@@ -6,7 +6,8 @@ import java.util.Arrays;
 public class CountCharactersApp {
 
     public static void main(String[] args) {
-        File file = new File ("src/Project03/txt/characters.txt");
+        String file = "E:\\Προγραμματισμος\\Java\\five-java-projects\\src" +
+                "\\Project03\\txt\\characters.txt";
         int[][] charactersCount;
 
         try{
@@ -30,7 +31,7 @@ each character is represented by 2 values. first is the ascii number [0] and
 the other is the amount of times they appear [1].
 ascii number is also used as index.
  */
-    static int[][] storeCharactersCountInTable(File file) throws IOException{
+    static int[][] storeCharactersCountInTable(String file) throws IOException{
         String line;
         int[][] intCharArray = new int[128][2];
         try(BufferedReader reader = new BufferedReader(new FileReader(file))){

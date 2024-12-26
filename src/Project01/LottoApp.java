@@ -8,8 +8,10 @@ public class LottoApp {
 
     public static void main(String[] args) {
 //setting input file path and output file path
-        File inFilePath = new File("src/Project01/txt/lottoNumbers.txt");
-        File outFilePath = new File( "src/Project01/txt/lottoNumbersNEW.txt");
+        File inFilePath = new File("E:\\Προγραμματισμος\\Java\\five-java" +
+                "-projects\\src\\Project01\\txt\\lottoNumbers.txt");
+        File outFilePath = new File( "E:\\Προγραμματισμος\\Java\\five-java" +
+                "-projects\\src\\Project01\\txt\\lottoNumbersNEW.txt");
 
         //using this array to store numbers from txt file
         int[] lottoNumbers;
